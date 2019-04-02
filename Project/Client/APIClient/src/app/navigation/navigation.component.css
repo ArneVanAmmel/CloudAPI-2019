@@ -1,0 +1,28 @@
+.navigationbar{
+    height: 50px;
+    width: 100%;
+    background-color: teal;
+}
+
+.content{
+    padding-left: 25%;
+    padding-right: 20%;
+    height: 35px;
+    padding-top: 15px;
+}
+
+.content a{
+    color: white;
+    padding-right: 2.5%;
+    text-decoration: none;
+    padding-top: 50%;
+    
+}
+
+.content a:hover{
+    color: deepskyblue;
+}
+
+.searchbar{
+    margin-left: 44.5%;
+}
