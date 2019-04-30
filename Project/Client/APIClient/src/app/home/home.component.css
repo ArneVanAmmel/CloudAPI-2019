@@ -1,11 +1,14 @@
 .background{
-    background-image: url(fotos/Baron.jpg);
+    /*background-image: url(fotos/Baron.jpg);*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     height: 100vh;
     width: 100%;
+    
+    /*line hieronder maakt de foto donkerder*/
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(fotos/Baron.jpg);
 }
 
 .welcome{
@@ -27,4 +30,6 @@ h1{
 
 h3{
     color: white;
+    text-align: center;
+    
 }

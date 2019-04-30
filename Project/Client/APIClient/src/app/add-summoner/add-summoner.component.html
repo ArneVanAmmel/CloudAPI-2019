@@ -1,5 +1,45 @@
 <app-navigation></app-navigation>
 
-<p>
-  add-summoner works!
-</p>
+<div class="background">
+</div>
+<!--regionSelect gedeelte-->
+<div class="regionList" *ngIf="nameSearch==false">
+   <h1>Select your region</h1>
+  <div class="p-grid">
+    <div class="p-col">
+      <label><input type="checkbox" value="BR">BR</label><br>
+      <label><input type="checkbox" value="EUNE">EUNE</label><br>
+      <label><input type="checkbox" value="EUW">EUW</label><br>
+      <label><input type="checkbox" value="JP">JP</label>
+    </div>
+    <div class="p-col">
+      <label><input type="checkbox" value="KR">KR</label><br>
+      <label><input type="checkbox" value="LAN">LAN</label><br>
+      <label><input type="checkbox" value="LAS">LAS</label><br>
+      <label><input type="checkbox" value="NA">NA</label><br>
+    </div>
+    <div class="p-col">
+      <label><input type="checkbox" value="OCE">OCE</label><br>
+      <label><input type="checkbox" value="TR">TR</label><br>
+      <label><input type="checkbox" value="RU">RU</label><br>
+      <label><input type="checkbox" value="PBE">PBE</label>
+      <br>
+      <br>
+      
+      <button (click)="continue()">Continue</button>
+    </div>
+  </div>
+</div>
+
+<!--search gedeelte-->
+<div class="search" *ngIf="nameSearch==true">
+  <h1>Search your summoner</h1>
+  <div class="nameInput">
+    <input type="text">
+    <button>Search</button>
+    <br>
+    <br>
+    <br>
+    <button (click)="back()">Back</button>
+  </div>
+</div>

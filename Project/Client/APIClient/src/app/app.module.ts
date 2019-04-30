@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { AddSummonerComponent } from './add-summoner/add-summoner.component';
+import { SummonerListComponent } from './summoner-list/summoner-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AddSummonerComponent } from './add-summoner/add-summoner.component';
     LoginComponent,
     HomeComponent,
     NavigationComponent,
-    AddSummonerComponent
+    AddSummonerComponent,
+    SummonerListComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +24,7 @@ import { AddSummonerComponent } from './add-summoner/add-summoner.component';
       {path: "", component: LoginComponent},
       {path: "home", component: HomeComponent},
       {path: "AddSummoner", component:AddSummonerComponent},
+      {path: "SummonerList",component:SummonerListComponent},
     ])
   ],
   providers: [],

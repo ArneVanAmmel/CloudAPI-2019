@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddSummonerComponent implements OnInit {
 
+  nameSearch: boolean =false;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  continue(){
+    this.nameSearch=true;
+  }
+
+  back(){
+    this.nameSearch=false;
   }
 
 }
