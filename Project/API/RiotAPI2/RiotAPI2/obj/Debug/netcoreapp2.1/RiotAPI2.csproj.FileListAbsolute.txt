@@ -1,0 +1,14 @@
+D:\School\3de jaar HogeSchool\CloudAPI\Project\CloudAPI-2019\Project\API\RiotAPI2\RiotAPI2\bin\Debug\netcoreapp2.1\RiotAPI2.deps.json
+D:\School\3de jaar HogeSchool\CloudAPI\Project\CloudAPI-2019\Project\API\RiotAPI2\RiotAPI2\bin\Debug\netcoreapp2.1\RiotAPI2.runtimeconfig.json
+D:\School\3de jaar HogeSchool\CloudAPI\Project\CloudAPI-2019\Project\API\RiotAPI2\RiotAPI2\bin\Debug\netcoreapp2.1\RiotAPI2.runtimeconfig.dev.json
+D:\School\3de jaar HogeSchool\CloudAPI\Project\CloudAPI-2019\Project\API\RiotAPI2\RiotAPI2\bin\Debug\netcoreapp2.1\RiotAPI2.dll
+D:\School\3de jaar HogeSchool\CloudAPI\Project\CloudAPI-2019\Project\API\RiotAPI2\RiotAPI2\obj\Debug\netcoreapp2.1\RiotAPI2.csprojAssemblyReference.cache
+D:\School\3de jaar HogeSchool\CloudAPI\Project\CloudAPI-2019\Project\API\RiotAPI2\RiotAPI2\obj\Debug\netcoreapp2.1\RiotAPI2.csproj.CoreCompileInputs.cache
+D:\School\3de jaar HogeSchool\CloudAPI\Project\CloudAPI-2019\Project\API\RiotAPI2\RiotAPI2\obj\Debug\netcoreapp2.1\RiotAPI2.RazorAssemblyInfo.cache
+D:\School\3de jaar HogeSchool\CloudAPI\Project\CloudAPI-2019\Project\API\RiotAPI2\RiotAPI2\obj\Debug\netcoreapp2.1\RiotAPI2.RazorAssemblyInfo.cs
+D:\School\3de jaar HogeSchool\CloudAPI\Project\CloudAPI-2019\Project\API\RiotAPI2\RiotAPI2\obj\Debug\netcoreapp2.1\RiotAPI2.AssemblyInfoInputs.cache
+D:\School\3de jaar HogeSchool\CloudAPI\Project\CloudAPI-2019\Project\API\RiotAPI2\RiotAPI2\obj\Debug\netcoreapp2.1\RiotAPI2.AssemblyInfo.cs
+D:\School\3de jaar HogeSchool\CloudAPI\Project\CloudAPI-2019\Project\API\RiotAPI2\RiotAPI2\obj\Debug\netcoreapp2.1\RiotAPI2.RazorTargetAssemblyInfo.cache
+D:\School\3de jaar HogeSchool\CloudAPI\Project\CloudAPI-2019\Project\API\RiotAPI2\RiotAPI2\bin\Debug\netcoreapp2.1\RiotAPI2.pdb
+D:\School\3de jaar HogeSchool\CloudAPI\Project\CloudAPI-2019\Project\API\RiotAPI2\RiotAPI2\obj\Debug\netcoreapp2.1\RiotAPI2.dll
+D:\School\3de jaar HogeSchool\CloudAPI\Project\CloudAPI-2019\Project\API\RiotAPI2\RiotAPI2\obj\Debug\netcoreapp2.1\RiotAPI2.pdb

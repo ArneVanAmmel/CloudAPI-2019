@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using RiotAPI2.Models;
+
+namespace RiotAPI2.Controllers
+{
+    [Route("api/Summoners")]
+    [ApiController]
+    [EnableCors("AllowAllMethods")]
+    public class SummonerController : ControllerBase
+    {
+        public LibraryContext _context { get; set; }
+
+        public SummonerController(LibraryContext ctxt)
+        {
+            _context = ctxt;
+
+        }
+
+        [HttpGet]
+        public List<Summoner> GetSummoners()
+        {
+            return _context.Summoners.ToList();
+        }
+    }
+}

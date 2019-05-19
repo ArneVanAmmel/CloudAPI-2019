@@ -35,8 +35,8 @@
 <div class="search" *ngIf="nameSearch==true">
   <h1>Search your summoner</h1>
   <div class="nameInput">
-    <input type="text">
-    <button>Search</button>
+    <input type="text" [(ngModel)]="name">
+    <button (click)="search(name);">Search</button>
     <br>
     <br>
     <br>
