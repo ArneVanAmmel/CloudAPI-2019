@@ -25,4 +25,8 @@ export class SummonerListComponent implements OnInit {
   select(){
     this.selected = true
   }
+
+  delete(){
+    
+  }
 }

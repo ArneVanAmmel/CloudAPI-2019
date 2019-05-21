@@ -16,7 +16,8 @@ export class SummonerService {
 }
 
 export interface ISummoners {
-  Id: number;
+  id: string;
+  summonerId: number;
   accountId: string;
   puuid: string;
   name: string;

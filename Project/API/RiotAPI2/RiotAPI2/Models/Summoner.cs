@@ -8,9 +8,10 @@ namespace RiotAPI2.Models
 {
     public class Summoner
     {
+       
+        public string Id { get; set; }
         [Key]
-        public int Id { get; set; }
-
+        public int summonerId { get; set; }
         public string accountId { get; set; }
         public string puuid { get; set; }
         public string name { get; set; }

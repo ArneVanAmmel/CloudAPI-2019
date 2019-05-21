@@ -7,22 +7,22 @@
    <h1>Select your region</h1>
   <div class="p-grid">
     <div class="p-col">
-      <label><input type="checkbox" value="BR">BR</label><br>
-      <label><input type="checkbox" value="EUNE">EUNE</label><br>
-      <label><input type="checkbox" value="EUW">EUW</label><br>
-      <label><input type="checkbox" value="JP">JP</label>
+      <label><input type="checkbox" [(ngModel)]="checkbox1"  (change)="Checked($event)">BR</label><br>
+      <label><input type="checkbox" [(ngModel)]="checkbox2"  (change)="Checked($event)">EUNE</label><br>
+      <label><input type="checkbox" [(ngModel)]="checkbox3"  (change)="Checked($event)">EUW</label><br>
+      <label><input type="checkbox" [(ngModel)]="checkbox4"  (change)="Checked($event)">JP</label>
     </div>
     <div class="p-col">
-      <label><input type="checkbox" value="KR">KR</label><br>
-      <label><input type="checkbox" value="LAN">LAN</label><br>
-      <label><input type="checkbox" value="LAS">LAS</label><br>
-      <label><input type="checkbox" value="NA">NA</label><br>
+      <label><input type="checkbox" [(ngModel)]="checkbox5"  (change)="Checked($event)">KR</label><br>
+      <label><input type="checkbox" [(ngModel)]="checkbox6"  (change)="Checked($event)">LAN</label><br>
+      <label><input type="checkbox" [(ngModel)]="checkbox7"  (change)="Checked($event)">LAS</label><br>
+      <label><input type="checkbox" [(ngModel)]="checkbox8"  (change)="Checked($event)">NA</label><br>
     </div>
     <div class="p-col">
-      <label><input type="checkbox" value="OCE">OCE</label><br>
-      <label><input type="checkbox" value="TR">TR</label><br>
-      <label><input type="checkbox" value="RU">RU</label><br>
-      <label><input type="checkbox" value="PBE">PBE</label>
+      <label><input type="checkbox" [(ngModel)]="checkbox9"  (change)="Checked($event)">OCE</label><br>
+      <label><input type="checkbox" [(ngModel)]="checkbox10"  (change)="Checked($event)">TR</label><br>
+      <label><input type="checkbox" [(ngModel)]="checkbox11"  (change)="Checked($event)">RU</label><br>
+      <label><input type="checkbox" [(ngModel)]="checkbox12"  (change)="Checked($event)">PBE</label>
       <br>
       <br>
       
@@ -32,14 +32,27 @@
 </div>
 
 <!--search gedeelte-->
-<div class="search" *ngIf="nameSearch==true">
-  <h1>Search your summoner</h1>
+<div class="search" *ngIf="nameSearch==true && searching==false">
+  <h1>Search your summoner </h1>
   <div class="nameInput">
-    <input type="text" [(ngModel)]="name">
-    <button (click)="search(name);">Search</button>
+    <input type="text" [(ngModel)]="summonername">
+    <button (click)="search(summonername);">Search</button>
     <br>
     <br>
     <br>
     <button (click)="back()">Back</button>
   </div>
+</div>
+
+<!--adding to database-->
+<div class = "adding" *ngIf="searching==true">
+  <p >Name:{{Summoner.name}}</p>
+  <p >LeveL:{{Summoner.summonerLevel}}</p>
+  <p >SummonerId:{{Summoner.id}}</p>
+  <p >Puuid:{{Summoner.puuid}}</p>
+  <p >AccountId:{{Summoner.accountId}}</p>
+  <p >IconId:{{Summoner.profileIconId}}</p>
+  <p >RevisionDate:{{Summoner.revisionDate}}</p>
+  <button (click)="back()">Back</button>
+  <button class="addButton" (click)="adding()">Add</button>
 </div>

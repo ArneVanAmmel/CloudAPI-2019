@@ -27,5 +27,14 @@ namespace RiotAPI2.Controllers
         {
             return _context.Summoners.ToList();
         }
+
+        [HttpPost]
+        public ActionResult<Summoner> AddSummoner([FromBody]Summoner summoner)
+        {
+            _context.Summoners.Add(summoner);
+            _context.SaveChanges();
+            //return boek met ID
+            return Created("", summoner);
+        }
     }
 }

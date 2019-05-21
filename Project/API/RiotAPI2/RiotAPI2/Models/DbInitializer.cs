@@ -17,7 +17,7 @@ namespace RiotAPI2.Models
             {
                 var summoner = new Summoner()
                 {
-                    
+                    Id = "AEc2xIFeQEEvzC76udYcMiIwgnkJicq_oG5X0srX8aNLZjo",
                     accountId = "4CSDIe4Lj34YuAj_HKf-0SD-S0bXPjGvn4GLms-SHxUM-pI",
                     puuid = "pOjXv-qXNyyyYHdVnZh2j4sCVY-lXjKRkP9WAtcsvpRBfpqmUXlESANCXWohUf6j8T3kjOelJ2DTZg",
                     name = "Djorick",
@@ -29,7 +29,7 @@ namespace RiotAPI2.Models
 
                 var summoner2 = new Summoner()
                 {
-                    
+                    Id = "z2fQxrNlfXDOdpZeIcPqLkICgTPCafxEdGg0xlMWBohgVfY",
                     accountId = "Okd-alz-F63BKVtD5N-Vt1bTLcgjPsa66EPuZSjkW8Ib-ko",
                     puuid = "LJCsCPU9AxjjD_UclgiejmTSEVzOWqpuiWXV8ERG9-hWVUb4xTS-kVCBoFECfBsqVZFTZX878sMGEg",
                     name = "King Potato xD",
@@ -41,7 +41,7 @@ namespace RiotAPI2.Models
 
                 var summoner3 = new Summoner()
                 {
-                   
+                    Id = "yTk6P8BX0Kca1Quk-nlrH4ROQ1paEuNghQ80HEVHWrYBdqs",
                     accountId = "RtlxgFfJBpvOrGhEnPDj3ww5KZKEsq5FleIiBP8_XZBjsw",
                     puuid = "oITCLCpEsCD8d6faT6gwi-fUaro3xPr-DCAQyhxdD--ueNzRyXEqZXKtUA4iAHN-9KEEVi-gFyOl-w",
                     name = "vincent boden",
@@ -53,7 +53,7 @@ namespace RiotAPI2.Models
 
                 var summoner4 = new Summoner()
                 {
-                    
+                    Id = "VH4ENqlFzjdf1eJrT1VWed7xZDcw0BKxJbccO5mmLX-nmLk",
                     accountId = "Ie29F74S6VexwwR4SLc3rqMxLRUMksXBIF1VFsKf5RZXsoU",
                     puuid = "dB5VA6ay_Se1nYmVhUCieXyM8BBSgTC4hNuSq5D8Rqy8U_u1VTEm-Ym3p1sgFdiri4uMojLXEeAU_g",
                     name = "TheConfirmer0",
