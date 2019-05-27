@@ -1,0 +1,45 @@
+.background{
+    /*background-image: url(fotos/Baron.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    /*line hieronder maakt de foto donkerder*/
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(fotos/Baron.jpg);
+}
+
+.summonerList{
+    top:50%;
+    left: 50%;
+    height: 12%;
+    width: 25%;
+    position: absolute;
+    margin-top: -6%;
+    margin-left: -12%;
+    border: 1px solid black;
+    background-color: white;
+   
+}
+
+h1{
+    text-align: center;
+}
+
+#my-div {
+    width: 99%;
+    height: 50%;
+    
+}
+
+
+a.fill-div {
+    text-align: center;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    border: solid purple;
+    background-color: white;
+}

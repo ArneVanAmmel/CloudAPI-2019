@@ -1,0 +1,12 @@
+<app-navigation></app-navigation>
+<div class="background">
+</div>
+<div class="summonerList">
+  <h1>Delete a summoner</h1>
+
+  <div id="my-div" *ngFor = "let summoner of Summoners">
+    
+    <a  (click)="delete(summoner.summonerId)" class="fill-div">{{summoner.name}}</a>
+    
+</div>
+  </div>

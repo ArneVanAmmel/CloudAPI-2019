@@ -12,6 +12,7 @@ import { from } from 'rxjs';
 import {SummonerService} from './Services/SummonerList/summoner.service';
 import {SummonerSearchService} from './Services/RiotAPI/summoner-search.service';
 import {FormsModule} from '@angular/forms';
+import { DeleteSummonerComponent } from './delete-summoner/delete-summoner.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import {FormsModule} from '@angular/forms';
     HomeComponent,
     NavigationComponent,
     AddSummonerComponent,
-    SummonerListComponent
+    SummonerListComponent,
+    DeleteSummonerComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,7 @@ import {FormsModule} from '@angular/forms';
       {path: "home", component: HomeComponent},
       {path: "AddSummoner", component:AddSummonerComponent},
       {path: "SummonerList",component:SummonerListComponent},
+      {path: "DeleteSummoner",component:DeleteSummonerComponent},
     ])
   ],
   providers: [

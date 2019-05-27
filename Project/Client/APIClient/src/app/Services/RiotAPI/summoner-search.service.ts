@@ -13,7 +13,7 @@ export class SummonerSearchService {
 
 
   GetName(name,region){
-    return this.http.get<ISummoner>("https:"+region+".api.riotgames.com/lol/summoner/v4/summoners/by-name/"+name+"?api_key=RGAPI-d2c5ed83-9c4d-4d46-b7c8-9d51e1de2e41")
+    return this.http.get<ISummoner>("https:"+region+".api.riotgames.com/lol/summoner/v4/summoners/by-name/"+name+"?api_key=RGAPI-5ff2cdf6-2e94-4de0-9cf7-9b0a1ece8bf1")
   }
   addSummoner(Summoner){
     return this.http.post<ISummoners>("http://localhost:30968/api/Summoners",Summoner);

@@ -36,5 +36,18 @@ namespace RiotAPI2.Controllers
             //return boek met ID
             return Created("", summoner);
         }
+
+        [Route("{summonerId}")]
+        [HttpDelete]
+        public IActionResult DeleteBook(int summonerId)
+        {
+            var theSummoner = _context.Summoners.Find(summonerId);
+            if (theSummoner == null)
+                return NotFound();
+
+            _context.Summoners.Remove(theSummoner);
+            _context.SaveChanges();             // DO NOT FORGET !!!
+            return NoContent();
+        }
     }
 }

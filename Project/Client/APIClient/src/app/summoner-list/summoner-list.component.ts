@@ -9,9 +9,10 @@ import {SummonerService, ISummoners} from '../Services/SummonerList/summoner.ser
 })
 export class SummonerListComponent implements OnInit {
 
-  Summoners: ISummoners[];
+  Summoners: ISummoners;
  // Summoners:ISummoner[];
  selected:boolean = false;
+ 
  
   constructor(private SummonerSvc:SummonerService) { }
 
@@ -26,7 +27,5 @@ export class SummonerListComponent implements OnInit {
     this.selected = true
   }
 
-  delete(){
-    
-  }
+  
 }
