@@ -13,6 +13,10 @@ export class SummonerService {
     return this.http.get<ISummoners>("http://localhost:30968/api/Summoners")
   } 
 
+  GetSummoner(name){
+    return this.http.get<ISummoners>("http://localhost:30968/api/Summoners/"+name)
+  }
+
   DeleteSummoner(summonerId){
     return this.http.delete<ISummoners[]>("http://localhost:30968/api/Summoners/"+summonerId)
   }

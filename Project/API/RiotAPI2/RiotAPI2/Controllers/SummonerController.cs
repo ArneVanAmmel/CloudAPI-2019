@@ -28,6 +28,18 @@ namespace RiotAPI2.Controllers
             return _context.Summoners.ToList();
         }
 
+        [Route("{sname}")]
+        [HttpGet]
+        public IActionResult GetSummoner(string sname)
+        {
+            var summoner = _context.Summoners.Where(n => n.name.Contains(sname));
+            if (summoner == null)
+            { 
+                return NotFound();
+            }
+            return Ok(summoner);
+        }
+
         [HttpPost]
         public ActionResult<Summoner> AddSummoner([FromBody]Summoner summoner)
         {

@@ -8,10 +8,12 @@ import {SummonerService, ISummoners} from '../Services/SummonerList/summoner.ser
   styleUrls: ['./summoner-list.component.css']
 })
 export class SummonerListComponent implements OnInit {
-
+ 
   Summoners: ISummoners;
  // Summoners:ISummoner[];
  selected:boolean = false;
+ name: string = "";
+ searching: boolean = false;
  
  
   constructor(private SummonerSvc:SummonerService) { }
@@ -26,6 +28,8 @@ export class SummonerListComponent implements OnInit {
   select(){
     this.selected = true
   }
+
+  
 
   
 }

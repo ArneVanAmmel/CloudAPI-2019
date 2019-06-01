@@ -1,13 +1,16 @@
 <app-navigation></app-navigation>
 <div class="background" *ngIf="selected==false">
 </div>
-<div class="summonerList" *ngIf="selected==false" >
+<div class="summonerList" *ngIf="selected==false " >
+    
   <h1>Select your summoner</h1>
-  <div class="icons-div">
+  
+  <div class="icons-div" *ngIf="searching==false">
   <div class="icon" *ngFor = "let summoner of Summoners">
       <img class="pic"src="http://avatar.leagueoflegends.com/{{summoner.region}}/{{summoner.name}}.png">
   </div>
 </div>
+
   <div id="my-div" *ngFor = "let summoner of Summoners">
     
     <a  (click)="select()" class="fill-div">{{summoner.name}}</a>
@@ -15,6 +18,11 @@
 </div>
 <div>
   <button class="deleteBTN" [routerLink]="['/DeleteSummoner']">Delete</button>
+  <button class="Previousbtn">Previous</button>
+  <button>Next</button><br>
+  <button class="searchbtn" [routerLink]="['/SummonerSearch']">Search</button>
+  
+
 </div>
 
     <!--<a href="#" *ngFor = "let summoner of Summoners">{{summoner.summonerName}}</a><br>-->

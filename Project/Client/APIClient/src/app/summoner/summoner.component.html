@@ -1,0 +1,36 @@
+<app-navigation></app-navigation>
+
+<div class="background">
+</div>
+
+<div class="search" *ngIf="searching==false">
+    <h1>Search your summoner </h1>
+    <div class="nameInput">
+      <input type="text" [(ngModel)]="summonername">
+      <button (click)="search(summonername)">Search</button>
+      <br>
+      <br>
+      <br>
+      <button [routerLink]="['/SummonerList']">Back</button>
+    </div>
+  </div>
+
+<!--na het zoeken-->
+  <div class="summonerList" *ngIf="searching==true " >
+    
+      <h1>Select your summoner</h1>
+      
+      <div class="icons-div" *ngIf="searching==true">
+      <div class="icon" *ngFor = "let summoner of Summoner">
+          <img class="pic"src="http://avatar.leagueoflegends.com/{{summoner.region}}/{{summoner.name}}.png">
+          <button (click)="back()">Back</button>
+      </div>
+    </div>
+    
+      <div id="my-div" *ngFor = "let summoner of Summoner">
+        
+        <a  (click)="select()" class="fill-div">{{summoner.name}}</a>
+        
+    </div>
+   
+    </div>
