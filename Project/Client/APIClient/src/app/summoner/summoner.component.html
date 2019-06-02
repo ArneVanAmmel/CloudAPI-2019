@@ -29,7 +29,7 @@
     
       <div id="my-div" *ngFor = "let summoner of Summoner">
         
-        <a  (click)="select()" class="fill-div">{{summoner.name}}</a>
+        <a  (click)="select(summoner.id)" class="fill-div">{{summoner.name}}</a>
         
     </div>
    

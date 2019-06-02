@@ -14,6 +14,7 @@ import {SummonerSearchService} from './Services/RiotAPI/summoner-search.service'
 import {FormsModule} from '@angular/forms';
 import { DeleteSummonerComponent } from './delete-summoner/delete-summoner.component';
 import { SummonerComponent } from './summoner/summoner.component';
+import { MatchHistoryComponent } from './match-history/match-history.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { SummonerComponent } from './summoner/summoner.component';
     AddSummonerComponent,
     SummonerListComponent,
     DeleteSummonerComponent,
-    SummonerComponent
+    SummonerComponent,
+    MatchHistoryComponent
   ],
   imports: [
     BrowserModule,
@@ -33,11 +35,12 @@ import { SummonerComponent } from './summoner/summoner.component';
     HttpClientModule,
     RouterModule.forRoot([
       {path: "", component: LoginComponent},
-      {path: "home", component: HomeComponent},
+      {path: "Home", component: HomeComponent},
       {path: "AddSummoner", component:AddSummonerComponent},
       {path: "SummonerList",component:SummonerListComponent},
       {path: "DeleteSummoner",component:DeleteSummonerComponent},
       {path: "SummonerSearch",component:SummonerComponent},
+      {path: "Match-History",component:MatchHistoryComponent},
     ])
   ],
   providers: [

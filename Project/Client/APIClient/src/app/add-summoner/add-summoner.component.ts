@@ -103,6 +103,8 @@ export class AddSummonerComponent implements OnInit {
       console.log(Summoner)
       this.Summoners.push(Summoner);
     })
+    this.searching = false;
+    this.nameSearch = false;
   }
   Checked(e){
     this.marked1= e.target.checked;

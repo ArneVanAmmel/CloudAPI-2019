@@ -13,7 +13,7 @@
 
   <div id="my-div" *ngFor = "let summoner of Summoners">
     
-    <a  (click)="select()" class="fill-div">{{summoner.name}}</a>
+    <a  (click)="select(summoner.accountId,summoner.region,summoner.name)" [routerLink]="['/Match-History']" class="fill-div">{{summoner.name}}</a>
     
 </div>
 <div>

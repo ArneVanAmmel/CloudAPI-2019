@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {SummonerService, ISummoners} from '../Services/SummonerList/summoner.service';
+import { SummonerSearchService } from '../Services/RiotAPI/summoner-search.service';
 //import { SummonerSearchService , ISummoner} from '../Services/RiotAPI/summoner-search.service';
 
 @Component({
@@ -16,17 +17,21 @@ export class SummonerListComponent implements OnInit {
  searching: boolean = false;
  
  
-  constructor(private SummonerSvc:SummonerService) { }
+  constructor(private SummonerSvc:SummonerService, private SummonerSearchSvc:SummonerSearchService) { }
 
   ngOnInit() {
     this.SummonerSvc.GetSummoners().subscribe((summoners)=>{
-      console.log(summoners)
+      
       this.Summoners = summoners;
     });
   }
 
-  select(){
+  select(accountId,region,summonerName){
     this.selected = true
+    this.SummonerSearchSvc.accountId = accountId;
+    this.SummonerSearchSvc.region = region;
+    this.SummonerSearchSvc.summonerName = summonerName;
+    console.log(this.SummonerSearchSvc.accountId);
   }
 
   
